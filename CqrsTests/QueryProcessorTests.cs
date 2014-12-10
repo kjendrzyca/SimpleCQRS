@@ -22,7 +22,7 @@
             var exampleResult = queryProcessor.Process<QueryExample, QueryResultExample>(new QueryExample());
 
             // then
-            Assert.That(exampleResult, Is.TypeOf<QueryResultExample>());
+            Assert.That(exampleResult, Is.InstanceOf<QueryResultExample>());
         }
     }
 }

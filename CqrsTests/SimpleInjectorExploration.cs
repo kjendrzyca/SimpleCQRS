@@ -20,7 +20,7 @@
             var instance = container.GetInstance<IQuery<QueryResultExample>>();
 
             // then
-            Assert.That(instance, Is.TypeOf<QueryExample>());
+            Assert.That(instance, Is.InstanceOf<QueryExample>());
         }
 
         [Test]
@@ -33,7 +33,7 @@
             var instance = container.GetInstance<Container>();
 
             // then
-            Assert.That(instance, Is.TypeOf<Container>());
+            Assert.That(instance, Is.InstanceOf<Container>());
         }
     }
 }
