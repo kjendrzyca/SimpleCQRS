@@ -49,9 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examples\ExampleQuery.cs" />
+    <Compile Include="Examples\ExampleQueryHandler.cs" />
+    <Compile Include="Examples\ExampleResult.cs" />
     <Compile Include="QueryProcessorTests.cs" />
     <Compile Include="SimpleInjectorExploration.cs" />
-    <Compile Include="ExampleQueries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

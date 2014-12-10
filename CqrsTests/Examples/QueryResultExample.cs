@@ -1,6 +1,6 @@
 namespace CqrsTests.Examples
 {
-    public class ExampleResult
+    public class QueryResultExample
     {
     }
 }

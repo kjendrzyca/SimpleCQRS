@@ -1,5 +1,6 @@
 ﻿namespace CqrsTests
 {
+    using CqrsTests.Examples;
     using Infrastructure;
     using NUnit.Framework;
     using SimpleInjector;
@@ -12,16 +13,16 @@
         {
             // given
             var container = new Container();
-            container.Register<IQueryHandler<ExampleQuery, ExampleResult>, ExampleQueryHandler>();
+            container.Register<IQueryHandler<QueryExample, QueryResultExample>, QueryHandlerExample>();
             container.Register<IQueryProcessor, QueryProcessor>();
             container.Verify();
 
             // when
             var queryProcessor = container.GetInstance<QueryProcessor>();
-            var exampleResult = queryProcessor.Process<ExampleQuery, ExampleResult>(new ExampleQuery());
+            var exampleResult = queryProcessor.Process<QueryExample, QueryResultExample>(new QueryExample());
 
             // then
-            Assert.That(exampleResult, Is.TypeOf<ExampleResult>());
+            Assert.That(exampleResult, Is.TypeOf<QueryResultExample>());
         }
     }
 }

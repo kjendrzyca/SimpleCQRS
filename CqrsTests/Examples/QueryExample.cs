@@ -2,7 +2,7 @@ namespace CqrsTests.Examples
 {
     using Infrastructure;
 
-    public class ExampleQuery : IQuery<ExampleResult>
+    public class QueryExample : IQuery<QueryResultExample>
     {
 
     }
