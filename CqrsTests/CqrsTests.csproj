@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandDispatcherTests.cs" />
+    <Compile Include="Examples\ExampleCommand.cs" />
+    <Compile Include="Examples\ExampleCommandHandler.cs" />
     <Compile Include="Examples\QueryExample.cs" />
     <Compile Include="Examples\QueryHandlerExample.cs" />
     <Compile Include="Examples\QueryResultExample.cs" />
